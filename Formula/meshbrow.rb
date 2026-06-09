@@ -11,7 +11,7 @@ class Meshbrow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5a7ec8f1f5715980f7f52955a2ba0824aac8e86221de3622d87ccec57939af4e"
+      sha256 "6cf37fda285b060fa064b78f8c8ceaac10b16c74690e9229c85ea8beeef6141c"
 
       define_method(:install) do
         bin.install "meshbrow"
@@ -19,7 +19,7 @@ class Meshbrow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_darwin_arm64.tar.gz"
-      sha256 "808d0116445909f0da253aa14a40e697eb2a68b7c602e8fafe56050d65928256"
+      sha256 "44145a5907e7f290a25e87d43222b5c68a127ac43c84c6ef0c08bba248bbf90d"
 
       define_method(:install) do
         bin.install "meshbrow"
@@ -30,14 +30,14 @@ class Meshbrow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_linux_amd64.tar.gz"
-      sha256 "f5e3c256996cc9724d59a78e5db98deefca451f9a50c215c1412808433702f43"
+      sha256 "07737e3c0ea95937a168c624c5e883edfdf39fd9725719c4958e8e7a23b8926b"
       define_method(:install) do
         bin.install "meshbrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_linux_arm64.tar.gz"
-      sha256 "afd67ae80de2cf2d0575efc8475078d060f6606ab3abff9a1f273c64c1ad9d26"
+      sha256 "2c5da83f390bb73cb6697a6356fdb54fc01c25462c1d486074ff0c5bb00fe4e1"
       define_method(:install) do
         bin.install "meshbrow"
       end
