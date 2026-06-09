@@ -3,7 +3,7 @@
 # Usage: curl -sSL https://get.meshbrow.dev | sh
 set -e
 
-REPO="meshbrow-dev/meshbrow-backend"
+REPO="meshbrow-dev/meshbrow-cli"
 BINARY="meshbrow"
 INSTALL_DIR="/usr/local/bin"
 
