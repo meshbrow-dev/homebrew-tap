@@ -5,21 +5,21 @@
 class Meshbrow < Formula
   desc "CLI for the Meshbrow Managed Browser Fleet"
   homepage "https://meshbrow.dev"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6cf37fda285b060fa064b78f8c8ceaac10b16c74690e9229c85ea8beeef6141c"
+      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.2.0/meshbrow_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f5098d2beb2ae9cb885ab304a27bbf5298b89aee8ac14174414312590cb07c53"
 
       define_method(:install) do
         bin.install "meshbrow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_darwin_arm64.tar.gz"
-      sha256 "44145a5907e7f290a25e87d43222b5c68a127ac43c84c6ef0c08bba248bbf90d"
+      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.2.0/meshbrow_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8501267187827edf178197ee415db38472d06364e7bebe0f060bd46c93e66dc6"
 
       define_method(:install) do
         bin.install "meshbrow"
@@ -29,15 +29,15 @@ class Meshbrow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_linux_amd64.tar.gz"
-      sha256 "07737e3c0ea95937a168c624c5e883edfdf39fd9725719c4958e8e7a23b8926b"
+      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.2.0/meshbrow_0.2.0_linux_amd64.tar.gz"
+      sha256 "ca6f9b76282f98e8d7684615a851831aaa8a846a8a81214f069a92346f7437ed"
       define_method(:install) do
         bin.install "meshbrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.1.0/meshbrow_0.1.0_linux_arm64.tar.gz"
-      sha256 "2c5da83f390bb73cb6697a6356fdb54fc01c25462c1d486074ff0c5bb00fe4e1"
+      url "https://github.com/meshbrow-dev/meshbrow-cli/releases/download/v0.2.0/meshbrow_0.2.0_linux_arm64.tar.gz"
+      sha256 "fd9afb85320779899a3852f289e2a8ce61deb84412db552a04cde15055164623"
       define_method(:install) do
         bin.install "meshbrow"
       end
