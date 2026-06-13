@@ -19,7 +19,7 @@ brew upgrade meshbrow
 
 ```bash
 # Authenticate
-meshbrow auth login --key mb_live_your_key_here
+meshbrow auth login
 
 # Launch a session
 meshbrow sessions create --stealth max --proxy-country US
